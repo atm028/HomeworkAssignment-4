@@ -1,0 +1,37 @@
+<h1>Creatye an account</h1>
+<div class='formWrapper'>
+    <form id='accountCreate' action='api/users' method='POST'>
+        <div class='formError'></div>
+        <input type='hidden' name='redirect' value='/'>
+
+        <div class='inputWrapper'>
+            <div class='inputWrapper'>
+                <div class='inputLabel'>First name</div>
+                <input type='text' name='firstName' placeholder="Jhon">
+            </div>
+        </div>
+        <div class='inputWrapper'>
+            <div class='inputWrapper'>
+                <div class='inputLabel'>Last name</div>
+                <input type='text' name='lastName' placeholder="Doe">
+            </div>
+        </div>
+        <div class='inputWrapper'>
+            <div class='inputWrapper'>
+                <div class='inputLabel'>Email</div>
+                <input type='text' name='email' placeholder="jhon.doe@mail.com">
+            </div>
+        </div>
+        <div class='inputWrapper'>
+            <div class='inputWrapper'>
+                <div class='inputLabel'>Password</div>
+                <input type='password' name='password' placeholder="">
+            </div>
+        </div>
+
+        <div class='inputWrapper ctaWrapper'>
+            <button type="submit" class="cta blue">Create</button>
+        </div>
+
+    </form>
+</div>

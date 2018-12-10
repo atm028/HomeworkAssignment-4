@@ -1,0 +1,18 @@
+<h1>Creatye an account</h1>
+<div class='formWrapper'>
+
+    <form id='cardViewForm' action='api/handleCard' method='POST'>
+        <div class='formError'></div>
+        <input type='hidden' name='redirect' value={card.info}>
+        <div class='inputWrapper ctaWrapper'>
+            <table border='1'>
+              <tr><td>Item name</td><td>Item volume</td><td>Item price</td></tr>
+              {card.items}
+            </table>
+            <br>Amount: {card.amount}
+        </div>
+        <div class='inputWrapper ctaWrapper'>
+            <button type="submit" class="cta blue">Place order</button>
+        </div>
+    </form>
+</div>
